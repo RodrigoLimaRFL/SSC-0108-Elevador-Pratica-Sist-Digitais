@@ -1,0 +1,6 @@
+
+State Machine - |Elevador|estado
+Name estado.desce estado.sobe estado.espera 
+estado.espera 0 0 0 
+estado.sobe 0 1 1 
+estado.desce 1 0 1 

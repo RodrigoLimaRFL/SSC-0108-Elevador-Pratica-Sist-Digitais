@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "requisitado",
+					"strict" : false
+				},
+				{
+					"name" : "andar[3]",
+					"strict" : false
+				},
+				{
+					"name" : "andar[2]",
+					"strict" : false
+				},
+				{
+					"name" : "andar[0]",
+					"strict" : false
+				},
+				{
+					"name" : "andar[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_debouncer",
+					"strict" : false
+				},
+				{
+					"name" : "clk_button",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
