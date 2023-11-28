@@ -12,11 +12,63 @@
 					"strict" : false
 				},
 				{
-					"name" : "requisitado",
+					"name" : "andar_display[0]",
 					"strict" : false
 				},
 				{
-					"name" : "andar[3]",
+					"name" : "andar_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "andar_atual_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "andar[1]",
 					"strict" : false
 				},
 				{
@@ -24,11 +76,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "andar[3]",
+					"strict" : false
+				},
+				{
 					"name" : "andar[0]",
 					"strict" : false
 				},
 				{
-					"name" : "andar[1]",
+					"name" : "requisitado",
 					"strict" : false
 				},
 				{

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Elevador
-Tue Nov 21 15:52:07 2023
+Tue Nov 28 13:41:51 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -14,16 +14,13 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |Elevador|estado
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: debouncer:D1
- 13. Parameter Settings for User Entity Instance: debouncer:D2
- 14. Parameter Settings for User Entity Instance: debouncer:D3
- 15. Port Connectivity Checks: "debouncer:D3"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: debouncer:D1
+ 12. Parameter Settings for User Entity Instance: debouncer:D2
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -50,16 +47,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 21 15:52:07 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 28 13:41:51 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Elevador                                    ;
 ; Top-level Entity Name              ; Elevador                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 90                                          ;
-;     Total combinational functions  ; 86                                          ;
-;     Dedicated logic registers      ; 46                                          ;
-; Total registers                    ; 46                                          ;
-; Total pins                         ; 12                                          ;
+; Total logic elements               ; 96                                          ;
+;     Total combinational functions  ; 96                                          ;
+;     Dedicated logic registers      ; 43                                          ;
+; Total registers                    ; 43                                          ;
+; Total pins                         ; 25                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -171,14 +168,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; debouncer.v                      ; yes             ; User Verilog HDL File  ; C:/Users/12547510/Documents/Elevador/debouncer.v  ;         ;
-; Elevador.vhd                     ; yes             ; User VHDL File         ; C:/Users/12547510/Documents/Elevador/Elevador.vhd ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; sevensegmentdisplay.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/12547510/Documents/Elevador/sevensegmentdisplay.bdf ;         ;
+; debouncer.v                      ; yes             ; User Verilog HDL File              ; C:/Users/12547510/Documents/Elevador/debouncer.v             ;         ;
+; Elevador.vhd                     ; yes             ; User VHDL File                     ; C:/Users/12547510/Documents/Elevador/Elevador.vhd            ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -186,42 +184,44 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Estimated Total logic elements              ; 90                    ;
+; Estimated Total logic elements              ; 96                    ;
 ;                                             ;                       ;
-; Total combinational functions               ; 86                    ;
+; Total combinational functions               ; 96                    ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 31                    ;
-;     -- 3 input functions                    ; 16                    ;
-;     -- <=2 input functions                  ; 39                    ;
+;     -- 4 input functions                    ; 48                    ;
+;     -- 3 input functions                    ; 10                    ;
+;     -- <=2 input functions                  ; 38                    ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 50                    ;
-;     -- arithmetic mode                      ; 36                    ;
+;     -- normal mode                          ; 66                    ;
+;     -- arithmetic mode                      ; 30                    ;
 ;                                             ;                       ;
-; Total registers                             ; 46                    ;
-;     -- Dedicated logic registers            ; 46                    ;
+; Total registers                             ; 43                    ;
+;     -- Dedicated logic registers            ; 43                    ;
 ;     -- I/O registers                        ; 0                     ;
 ;                                             ;                       ;
-; I/O pins                                    ; 12                    ;
+; I/O pins                                    ; 25                    ;
 ;                                             ;                       ;
 ; Embedded Multiplier 9-bit elements          ; 0                     ;
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; reset_debouncer~input ;
 ; Maximum fan-out                             ; 42                    ;
-; Total fan-out                               ; 476                   ;
-; Average fan-out                             ; 3.05                  ;
+; Total fan-out                               ; 530                   ;
+; Average fan-out                             ; 2.80                  ;
 +---------------------------------------------+-----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
-; |Elevador                  ; 86 (30)             ; 46 (10)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |Elevador              ; Elevador    ; work         ;
-;    |debouncer:D1|          ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|debouncer:D1 ; debouncer   ; work         ;
-;    |debouncer:D2|          ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|debouncer:D2 ; debouncer   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Entity Name         ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------------+--------------+
+; |Elevador                                  ; 96 (26)             ; 43 (7)                    ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |Elevador                                       ; Elevador            ; work         ;
+;    |debouncer:D1|                          ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|debouncer:D1                          ; debouncer           ; work         ;
+;    |debouncer:D2|                          ; 28 (28)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|debouncer:D2                          ; debouncer           ; work         ;
+;    |sevensegmentdisplay:DisplayAndarAtual| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|sevensegmentdisplay:DisplayAndarAtual ; sevensegmentdisplay ; work         ;
+;    |sevensegmentdisplay:DisplayAndar|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Elevador|sevensegmentdisplay:DisplayAndar      ; sevensegmentdisplay ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,27 +237,17 @@ Encoding Type:  One-Hot
 +---------------+--------------+-------------+---------------+
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; estado.espera                         ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 46    ;
+; Total registers                              ; 43    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 46    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 43    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 36    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -267,10 +257,10 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Elevador|debouncer:D1|counter[13] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Elevador|debouncer:D2|counter[6]  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Elevador|count[3]                 ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Elevador|estado                   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Elevador|debouncer:D1|counter[3]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Elevador|debouncer:D2|counter[14] ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |Elevador|andar_atual[1]           ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Elevador|Selector0                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -294,48 +284,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debouncer:D3 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; DELAY_BITS     ; 16    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "debouncer:D3"                                                                          ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; out_key ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 46                          ;
-;     CLR               ; 6                           ;
-;     CLR SLD           ; 4                           ;
-;     ENA CLR           ; 4                           ;
+; boundary_port         ; 25                          ;
+; cycloneiii_ff         ; 43                          ;
+;     CLR               ; 11                          ;
 ;     ENA CLR SCLR      ; 32                          ;
-; cycloneiii_lcell_comb ; 86                          ;
-;     arith             ; 36                          ;
+; cycloneiii_lcell_comb ; 110                         ;
+;     arith             ; 30                          ;
 ;         2 data inputs ; 30                          ;
-;         3 data inputs ; 6                           ;
-;     normal            ; 50                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
+;     normal            ; 80                          ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 10                          ;
-;         4 data inputs ; 31                          ;
+;         4 data inputs ; 48                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.69                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -354,38 +322,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Nov 21 15:51:58 2023
+    Info: Processing started: Tue Nov 28 13:41:42 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Elevador -c Elevador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdisplay.bdf
+    Info (12023): Found entity 1: sevensegmentdisplay
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.v
     Info (12023): Found entity 1: debouncer File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 28
 Info (12021): Found 2 design units, including 1 entities, in source file elevador.vhd
-    Info (12022): Found design unit 1: elevador-arch File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 19
+    Info (12022): Found design unit 1: elevador-arch File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 20
     Info (12023): Found entity 1: Elevador File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 6
 Info (12127): Elaborating entity "Elevador" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Elevador.vhd(28): object "out_sobe_db" assigned a value but never read File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 28
-Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:D1" File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 31
+Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:D1" File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 39
 Warning (10230): Verilog HDL assignment warning at debouncer.v(71): truncated value with size 32 to match size of target (16) File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 71
+Info (12128): Elaborating entity "sevensegmentdisplay" for hierarchy "sevensegmentdisplay:DisplayAndar" File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 51
+Warning (275011): Block or symbol "AND2" of instance "inst46" overlaps another block or symbol
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "debouncer:D1|out_key" is converted into an equivalent circuit using register "debouncer:D1|out_key~_emulated" and latch "debouncer:D1|out_key~1" File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 42
     Warning (13310): Register "debouncer:D2|out_key" is converted into an equivalent circuit using register "debouncer:D2|out_key~_emulated" and latch "debouncer:D2|out_key~1" File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 42
     Warning (13310): Register "debouncer:D1|intermediate" is converted into an equivalent circuit using register "debouncer:D1|intermediate~_emulated" and latch "debouncer:D1|out_key~1" File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 50
     Warning (13310): Register "debouncer:D2|intermediate" is converted into an equivalent circuit using register "debouncer:D2|intermediate~_emulated" and latch "debouncer:D2|out_key~1" File: C:/Users/12547510/Documents/Elevador/debouncer.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "sobe_button" File: C:/Users/12547510/Documents/Elevador/Elevador.vhd Line: 12
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 90 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 96 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Tue Nov 21 15:52:07 2023
+    Info: Processing ended: Tue Nov 28 13:41:51 2023
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:18
 
 

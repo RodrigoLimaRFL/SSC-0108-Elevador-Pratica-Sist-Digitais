@@ -3,183 +3,123 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.716
-TNS   : -100.541
+Slack : -4.822
+TNS   : -98.004
 
 Type  : Slow 1200mV 85C Model Setup 'reset_debouncer'
-Slack : -2.837
-TNS   : -25.287
-
-Type  : Slow 1200mV 85C Model Setup 'clk_button'
-Slack : -2.494
-TNS   : -19.774
-
-Type  : Slow 1200mV 85C Model Hold 'clk_button'
-Slack : -0.001
-TNS   : -0.002
+Slack : -2.497
+TNS   : -13.948
 
 Type  : Slow 1200mV 85C Model Hold 'reset_debouncer'
-Slack : 0.342
+Slack : 0.406
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.585
+Slack : 0.441
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : -2.133
-TNS   : -38.849
+Slack : -1.650
+TNS   : -13.974
 
 Type  : Slow 1200mV 85C Model Recovery 'reset_debouncer'
-Slack : -1.784
-TNS   : -17.668
-
-Type  : Slow 1200mV 85C Model Recovery 'clk_button'
-Slack : -1.674
-TNS   : -16.568
+Slack : -1.313
+TNS   : -9.110
 
 Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : 0.403
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'clk_button'
-Slack : 0.848
-TNS   : 0.000
+Slack : -0.355
+TNS   : -0.355
 
 Type  : Slow 1200mV 85C Model Removal 'reset_debouncer'
-Slack : 1.101
-TNS   : 0.000
+Slack : -0.221
+TNS   : -1.483
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -49.260
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_button'
-Slack : -3.000
-TNS   : -15.850
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reset_debouncer'
 Slack : -3.000
-TNS   : -15.850
+TNS   : -11.995
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -4.239
-TNS   : -89.915
+Slack : -4.425
+TNS   : -88.205
 
 Type  : Slow 1200mV 0C Model Setup 'reset_debouncer'
-Slack : -2.500
-TNS   : -22.050
-
-Type  : Slow 1200mV 0C Model Setup 'clk_button'
-Slack : -2.206
-TNS   : -17.344
-
-Type  : Slow 1200mV 0C Model Hold 'clk_button'
-Slack : -0.011
-TNS   : -0.022
+Slack : -2.152
+TNS   : -11.873
 
 Type  : Slow 1200mV 0C Model Hold 'reset_debouncer'
-Slack : 0.283
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.541
+Slack : 0.465
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : -1.874
-TNS   : -33.470
+Slack : -1.431
+TNS   : -10.951
 
 Type  : Slow 1200mV 0C Model Recovery 'reset_debouncer'
-Slack : -1.584
-TNS   : -15.744
-
-Type  : Slow 1200mV 0C Model Recovery 'clk_button'
-Slack : -1.495
-TNS   : -14.854
-
-Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : 0.496
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'clk_button'
-Slack : 0.816
-TNS   : 0.000
+Slack : -1.235
+TNS   : -8.576
 
 Type  : Slow 1200mV 0C Model Removal 'reset_debouncer'
-Slack : 1.041
-TNS   : 0.000
+Slack : -0.219
+TNS   : -1.477
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : -0.186
+TNS   : -0.186
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -49.260
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_button'
-Slack : -3.000
-TNS   : -15.850
-
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reset_debouncer'
 Slack : -3.000
-TNS   : -15.850
+TNS   : -11.995
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -2.085
-TNS   : -40.648
+Slack : -2.154
+TNS   : -39.081
 
 Type  : Fast 1200mV 0C Model Setup 'reset_debouncer'
-Slack : -1.288
-TNS   : -7.135
-
-Type  : Fast 1200mV 0C Model Setup 'clk_button'
-Slack : -0.695
-TNS   : -4.537
-
-Type  : Fast 1200mV 0C Model Hold 'clk_button'
-Slack : -0.019
-TNS   : -0.038
+Slack : -0.684
+TNS   : -3.204
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.041
-TNS   : 0.000
+Slack : -0.016
+TNS   : -0.016
 
 Type  : Fast 1200mV 0C Model Hold 'reset_debouncer'
-Slack : 0.112
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : -1.321
-TNS   : -26.147
+Slack : -1.032
+TNS   : -11.565
 
 Type  : Fast 1200mV 0C Model Recovery 'reset_debouncer'
-Slack : -1.113
-TNS   : -11.034
-
-Type  : Fast 1200mV 0C Model Recovery 'clk_button'
-Slack : -1.087
-TNS   : -10.774
+Slack : -0.312
+TNS   : -2.166
 
 Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : -0.111
-TNS   : -0.111
-
-Type  : Fast 1200mV 0C Model Removal 'clk_button'
-Slack : 0.346
-TNS   : 0.000
+Slack : -0.469
+TNS   : -0.853
 
 Type  : Fast 1200mV 0C Model Removal 'reset_debouncer'
-Slack : 0.471
-TNS   : 0.000
+Slack : -0.201
+TNS   : -1.383
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -41.134
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_button'
-Slack : -3.000
-TNS   : -15.812
+TNS   : -41.103
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reset_debouncer'
 Slack : -3.000
-TNS   : -15.394
+TNS   : -11.632
 
 ------------------------------------------------------------

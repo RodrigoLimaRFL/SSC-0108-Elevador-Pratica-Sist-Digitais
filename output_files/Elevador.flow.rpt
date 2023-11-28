@@ -1,5 +1,5 @@
 Flow report for Elevador
-Tue Nov 21 15:52:31 2023
+Tue Nov 28 13:42:13 2023
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov 21 15:52:26 2023       ;
+; Flow Status                        ; Successful - Tue Nov 28 13:42:10 2023       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Elevador                                    ;
 ; Top-level Entity Name              ; Elevador                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 87 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 86 / 114,480 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 46 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 46                                          ;
-; Total pins                         ; 12 / 529 ( 2 % )                            ;
+; Total logic elements               ; 97 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 96 / 114,480 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 43 / 114,480 ( < 1 % )                      ;
+; Total registers                    ; 43                                          ;
+; Total pins                         ; 25 / 529 ( 5 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/21/2023 15:51:58 ;
+; Start date & time ; 11/28/2023 13:41:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Elevador            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589198.170059271808764         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589198.170118970206888         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4814 MB             ; 00:00:17                           ;
-; Fitter               ; 00:00:14     ; 1.0                     ; 5707 MB             ; 00:00:21                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4847 MB             ; 00:00:02                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4814 MB             ; 00:00:18                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 5705 MB             ; 00:00:21                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4703 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4848 MB             ; 00:00:02                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
